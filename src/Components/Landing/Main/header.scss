@@ -1,0 +1,106 @@
+@import "../landing.scss";
+
+#top-contact{
+    background-color: getColors(dark);
+    color: white;
+    font-size: 11px;
+    padding : 10px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+
+
+    span{
+      border-right: 1px solid white;
+      padding: 0 10px;
+    }
+    #right{
+        margin-right: 40px;
+        a{
+            color: white;
+            text-decoration: none;
+            padding: 0 10px;
+        }
+    }
+    
+    
+}
+
+
+
+#head-content{
+    width: inherit;
+    height: 80vh;
+    overflow: hidden;
+   
+   
+
+    .wrapper{  
+        display: grid;
+        grid-template-columns: 50% 50%;
+        background: url('../../../Images/headback.jpg');
+        background-size: cover;
+        width: 100%;
+        height: 100%;
+        line-height: 40px;
+        color: black;
+        line-height: 40px;
+        padding-left: 30px;
+       
+        .right-half{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin: 0 40px 0 40px;
+
+
+            h1{
+                line-height: 45px;
+               
+                .__header-text-one{
+                    font-weight: 0.2em;
+                    letter-spacing: 14px;
+                    font-size: 15px;
+                   
+                }
+                .__header-text-two{
+                    font-size: 45px;
+                    font-weight: 600;
+                  
+                }
+                .__header-text-three{
+                    font-size: 20px;
+                    font-weight: 500;
+                    color: getColors(primary);
+                   
+                }
+        
+               
+            }
+            .__header-button{
+                    
+                width: 150px;
+                height: 56px;
+                color:white;
+                background-color: getColors(primary);
+                border: 0px solid white;
+                border-radius: $border-radius;
+                transition: all 200ms;
+
+                &:hover{
+                   
+                    transform : translateY(-10px);
+                }
+                &:active{
+                    box-shadow: 0px 1px 3px black;
+                    transform : translateY(-8px);
+                }
+            }
+        
+        }
+           
+       
+    }
+
+}

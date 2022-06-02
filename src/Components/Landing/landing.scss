@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,300;1,400;1,500&display=swap');
+ 
+$border-radius: 5px;
+$text-shadow:  2px 2px 2px gray;
+ $box-shadow:   7px 8px 3px -1px rgba(0,0,0,0.75);
+ $theme-colors: (
+     //primary: #1F19D0,
+       primary : #1F1D90,
+       texthead: #2e3432,
+     dark: rgba(0, 0, 0, 0.788),
+     light: rgb(230, 230, 230)
+
+ );
+
+ @function getColors($color-name){
+     @return map-get($theme-colors, $color-name);
+ }
+
+@mixin wrapper {
+    background-color: rgba(0, 0, 0, 0.178);
+    //backdrop-filter: blur(10px);
+}
+
+
+html{
+    height: 100%;
+   
+}
+.Container{
+    box-sizing: border-box;
+    margin:0;
+    font-family: 'Poppins', sans-serif;
+    display: grid;
+    height: 100%;
+
+
+}
+
+
+
+

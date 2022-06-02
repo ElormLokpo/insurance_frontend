@@ -1,0 +1,93 @@
+$primary : #03022E;
+$dark : rgb(61, 60, 60);
+$light: rgb(240, 240, 240);
+$br : 5px;
+
+#main-dash{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 20% 80%;
+
+    #main-nav-cl{
+        background-color: $light;
+        display: flex;
+        align-items: center;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        
+        .nav-cl{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            height : 100vh;
+            width : 100%;
+            border-top-right-radius: $br;
+            border-bottom-right-radius: $br;
+            background-color: $primary;
+           
+    
+                .nav-item{
+                    color: $light;
+                    padding: 20px;
+                    margin: 0 15px 0px 10px;
+               
+    
+                    &:hover{
+                        cursor: pointer;
+                        background-color: #080764;
+                        width: 90%;
+                        padding: 20px;
+                        border-radius: $br;
+                        color: white;
+                        margin: 0 15px 0px 10px;
+                    }
+                }
+        }
+    }
+    
+
+    
+    #cl-main-content{
+        background-color: white;
+        display: grid;
+        grid-template-columns: 20% 80%;
+        width : 100vw;
+        justify-content: center;
+        
+        #forms{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+        #apply-form{
+            padding: 50px;
+            width: 60vw;
+            background-color: white;
+           
+                
+                form{
+                    input{
+                        height: 33px;
+                        margin-bottom: 10px;
+                    }
+
+                    .sub-btn{
+                        background-color: $primary;
+                        color: $light;
+                        padding: 7px;
+                        border-radius: $br;
+                    }
+                }
+           
+            
+        }
+    }
+
+        
+    }
+       
+    
+  
+    
+}

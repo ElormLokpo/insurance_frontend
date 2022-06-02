@@ -1,0 +1,125 @@
+$primary : #03022E;
+$dark : rgb(61, 60, 60);
+$light: rgb(240, 240, 240);
+$br : 5px;
+
+#main-dash{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 20% 85%;
+
+    #main-nav{
+        background-color: $light;
+        display: flex;
+        align-items: center;
+        
+        .nav-ag{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            height : 40vh;
+            width : 100%;
+            border-top-right-radius: $br;
+            border-bottom-right-radius: $br;
+            background-color: $primary;
+           
+    
+                .nav-item{
+                    color: $light;
+                    padding: 20px;
+                    margin: 0 15px 0px 10px;
+               
+    
+                    &:hover{
+                        cursor: pointer;
+                        background-color: #080764;
+                        width: 90%;
+                        padding: 20px;
+                        border-radius: $br;
+                        color: white;
+                        margin: 0 15px 0px 10px;
+                    }
+                }
+        }
+    }
+    
+
+    
+    #main-content{
+        background-color: $light;
+        padding: 40px 40px 40px 40px;
+        display: grid;
+        grid-template-columns: 80% 20%;
+        // align-items: center;
+        width: 80vw;
+        
+        h3{
+           
+        }
+
+        form{
+            background-color: white;
+            width: 50vw;
+            height: 70vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 50px;
+            border-radius: $br;
+            gap: 10px;
+            
+            
+
+            .us-names{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                column-gap: 10px;
+                row-gap: 0;
+                width: 100%;
+
+                input{
+                    width: 286px;
+                }
+            }
+            
+            .date-field{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                column-gap: 10px;
+                row-gap: 0;
+                width: 100%;
+            }
+            .sub-btn{
+                background-color: $primary;
+                color: $light;
+                padding: 7px;
+                border-radius: $br;
+            }
+        }
+
+        #client-number{
+           
+            .client-box{
+                height: 30vh;
+                background-color: white;
+                border-radius: $br;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                margin-bottom: 20px;
+                
+                .client-no{
+                    font-size: 50px;
+                    color: $dark;
+                }
+            }
+        }
+    }
+       
+    
+  
+    
+}
