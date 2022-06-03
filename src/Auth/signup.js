@@ -1,5 +1,6 @@
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import * as Yup from 'yup';
+import {Link} from 'react-router-dom';
 import './signup.scss';
 import im from '../Images/leftc.jpg';
 import axios from '../Api/axios';
@@ -78,7 +79,7 @@ const SignUp = ()=>{
                                 <small class = 'err'><ErrorMessage name = 're_password' /><br /></small> 
                                 
                                 
-                                <button class = 'btn btn-dark b' type = 'submit'>Sign Up</button>
+                                <button class = 'btn btn-dark b' type = 'submit'><Link to = '/signin'>Sign Up</Link></button>
                             
                             </Form>}}
                 </Formik>

@@ -1,4 +1,5 @@
 import { Formik, Form, Field, ErrorMessage } from "formik";
+import {Link} from 'react-router-dom';
 import * as Yup from 'yup';
 import './signin.scss';
 
@@ -29,7 +30,7 @@ const SignIn = ()=>{
                         <Field type = 'text' class = 'form-control f' name = 'password' placeholder = 'Password' />
                         <small class = 'err'><ErrorMessage name = 'password' /><br /></small> 
 
-                        <button class = 'btn btn-dark b'>Login</button>
+                        <button class = 'btn btn-dark b'><Link to = '/dashboardCl'>Login</Link></button>
                     
                     </Form>}
         </Formik>

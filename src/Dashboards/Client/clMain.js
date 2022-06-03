@@ -25,9 +25,7 @@ const ClMain = ()=> {
             case 2:
                 renderContent = (<HomeInsurance />);
                 break;
-            case 3:
-                renderContent = (<TravelInsurance />);
-                break;
+            
             case 4: 
                 renderContent = (<HealthInsurance />);
                 break;

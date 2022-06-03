@@ -19,7 +19,6 @@ const navCl = (props)=>{
     <nav class = 'shadow-lg nav-cl'>
         <div class = 'nav-item' onClick = {()=>navIdVal(1)}><FaWpforms /> Add Policies</div>
         <div class = 'nav-item' onClick = {()=>navIdVal(2)}><BsHouseDoor /> Home Insurance</div>
-        <div class = 'nav-item' onClick = {()=>navIdVal(3)}><FaPlaneDeparture /> Travel Insurance</div>
         <div class = 'nav-item' onClick = {()=>navIdVal(4)}><GiLifeTap /> Health Insurance</div>
         <div class = 'nav-item' onClick = {()=>navIdVal(5)}><MdHealthAndSafety /> Life Insurance</div>
         <div class = 'nav-item' onClick = {()=>navIdVal(6)}><BiCar /> Motor Insurance</div>
