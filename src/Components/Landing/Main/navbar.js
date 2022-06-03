@@ -16,13 +16,14 @@ function navbar() {
                     <li><a href = "#sect-one" class = '__nav-link'>Policies</a></li>
                     <li><a href = "#sect-three" class = '__nav-link'>About Us </a></li>
                     <li><a href = "#sect-four" class = '__nav-link'>Mobile</a></li>
-                </ul>
+                    <li> <NavLink to = 'agentContact'><span  class = '__nav-link'>Contact Agent</span></NavLink></li>
+            </ul>
         </div>
 
         <div class = 'first-list'>
             <ul>
-                <li><NavLink to = 'login' class = '__nav-link'>Login</NavLink></li>
-                <li><a href = "#" class = '__navlink-button'>Contact Agent</a></li>
+                <li><NavLink to = 'signin'><span  class = '__nav-link'>Login</span></NavLink></li>
+                <li><NavLink to = "signup"><button  class = '__navlink-button-two'>Get Started</button></NavLink></li>
             </ul>
         </div>
         </div>

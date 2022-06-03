@@ -44,7 +44,10 @@ nav{
                     display: inline;
                     padding-left: 20px;
                     
-        
+                    a{
+                        text-decoration: none;
+                    }
+
                     .__nav-link{
                         text-decoration: none;
                         color: getColors(dark);
@@ -61,11 +64,12 @@ nav{
         
                     }
 
-
-                    .__navlink-button{
+                   
+                    .__navlink-button-two{
                         text-decoration: none;
                         font-size: 12px;
                         box-sizing: border-box;
+                        border: 0;
                         background-color: getColors(primary);
                         border-radius: $border-radius;
                         color: white;

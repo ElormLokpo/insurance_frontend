@@ -9,12 +9,16 @@ import AgMain from './Dashboards/Agent/agMain';
 import ClMain from './Dashboards/Client/clMain';
 import AdMain from './Dashboards/Admin/adMain';
 import SignIn from './Auth/signin';
+import SignUp from './Auth/signup';
+import ContactAgent from './Components/Landing/Pages/contactAgent';
 
 const App = ()=>{
   return(
     <Routes>
       <Route exact path = '/' element = {<Landing />} />
-      <Route path = 'login' element = {<SignIn />} />
+      <Route path = 'signin' element = {<SignIn />} />
+      <Route path = 'signup' element = {<SignUp />} />
+      <Route path = 'agentContact' element = {<ContactAgent />} />
       <Route exact path = '/dashboardAg' element = {<AgMain />} />
       <Route exact path = '/dashboardCl' element = {<ClMain />} />
       <Route exact path = '/dashboardAd' element = {<AdMain />} />

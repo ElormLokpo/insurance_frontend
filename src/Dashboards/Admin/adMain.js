@@ -14,16 +14,7 @@ const AdMain = (props)=>{
                     <h3>Add Agent</h3>
                     <FormAg />
                 </div>
-                <div id = 'client-number'>
-                    <h5>Agent</h5>
-                    <div class = 'shadow-lg client-box'>
-                        <span>No. of Active Agents</span>
-                        <span class = 'client-no'>0</span>
-                       
-                    </div>
-
-                    
-                </div>
+                
             </div>
         </div>
     )

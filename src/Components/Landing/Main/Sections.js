@@ -11,7 +11,7 @@ import {
 
   } from '@fortawesome/free-brands-svg-icons';
   import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-  import {Link} from 'react-router-dom';
+  import {Link, NavLink} from 'react-router-dom';
   import './section.scss';
 
 const Sections = ()=>{
@@ -60,10 +60,9 @@ const Sections = ()=>{
                 <div class = 'right'>
                     <h3>To get started</h3>
                     <ul>
-                        <li>1. Click <span><a href="#">Contact Agent</a></span> to connect to an agent</li>
-                        <li>2. Discuss insurance policies with an agent.</li> 
-                        <li>3. The agent would provide your login credentitals.</li>
-                        <li>4. <span><Link to ='login'>Login</Link></span> with the credentials provided by your agent.</li>
+                        <li>1. Click <span> <Link to = "signup">Get Started</Link></span> to sign up.</li>
+                        <li>2. Discuss insurance policies with an <Link to = "agentContact">agent </Link> if you have any questions.</li> 
+                        <li>4. <span><Link to ='signin'>Login</Link></span> with the credentials.</li>
                         <li>5. Your dashboard would be loaded</li>
                         <li>6. Done! </li>
                     </ul>
@@ -130,10 +129,10 @@ const Sections = ()=>{
                     <div class="col">
                         <h5>Links</h5>
                        
-                           <p><a href="">Home</a></p>
-                           <p><a href="">Services</a></p>
-                           <p><a href="">About Us</a></p>
-                           <p><a href="">Features</a></p>
+                           <p><a href="#">Home</a></p>
+                           <p><a href="#">Policies</a></p>
+                           <p><a href="#sect-two">About Us</a></p>
+                           <p><a href="">Mobile</a></p>
                            <p><a href="">Contacts</a></p>
                        
                     </div>
